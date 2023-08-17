@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Bike motorizada</title>
+</head>
+
+<body>
+  <header id="header">
+    <div id="img-H-L"  class="img-header-logo">
+      <img src="./img/Logo-bike-2.3.png" alt="logo da loja" id="header-img" />
+    </div>
+    <div id="menu" class="menu">
+      <nav class="nav-bar" id="nav-bar">
+        <a class="nav-link" href="#header">HOME</a>
+        <a class="nav-link" href="#descricao">DESCRIÇÃO</a>
+        <a class="nav-link" href="#info-tec">INFORMAÇÃO</a>
+        <a class="nav-link" href="#garantia">GARANTIA</a>
+      </nav>
+    </div>
+    <nav class="nav-bar2 ofnav" id="navbar2">
+      <div class="img-logo-men">
+        <img src="./img/Logo-bike-2.4.png" alt="logo"/>
+      </div>
+      <div class="menuBurguer" id="menuB" onclick="openNav()">
+        &#9776
+      </div>
+      <div class="nav-bar-2" id="nav2">
+        <a class="nav-link" href="#header">HOME</a>
+        <a class="nav-link" href="#descricao">DESCRIÇÃO</a>
+        <a class="nav-link" href="#info-tec">INFORMAÇÃO</a>
+        <a class="nav-link" href="#garantia">GARANTIA</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="sec_1">
+      <div class="img-bikes">
+        <div class="img-mini">
+          <div class="imgmini" id="miniPreta"><img
+              src="/FreeCoodCamp/Prova-4/Pagina-Inicial-De-Um-Produto/img/Miniaturas/Bike-motorizada-2-vendaMini.png"></div>
+          <div class="imgmini" id="miniAzul">
+            <img src="/FreeCoodCamp/Prova-4/Pagina-Inicial-De-Um-Produto/img/Miniaturas/BiciMotorAzulMini.png">
+          </div>
+          <div class="imgmini" id="miniVermelha"><img
+              src="/FreeCoodCamp/Prova-4/Pagina-Inicial-De-Um-Produto/img/Miniaturas/BiciMotorVermelhaMini.png"></div>
+          <div class="imgmini" id="miniAmarela"><img
+              src="/FreeCoodCamp/Prova-4/Pagina-Inicial-De-Um-Produto/img/Miniaturas/BiciMotorAmarelaMini.png"></div>
+          <div class="imgmini" id="miniVideo">
+            <img src="/FreeCoodCamp/Prova-4/Pagina-Inicial-De-Um-Produto//img/Miniaturas/Video-mini.png"></div>
+        </div>
+        <div class="imagem">
+          <img id="img_bikemoto" src="./img/Bike-motorizada-2-venda.png" alt="imagem da bicicleta motorizada" />
+          <iframe id="video" class="ofvideo" width="650" height="521" src="https://www.youtube.com/embed/F6nv5Qk4cGQ"
+            title="" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="prod-inf">
+        <div class="inf-prod">
+          <div class="anuncio">
+            <h1>BICICLETA MOTORIZADA 80cc</h1>
+            <p>&#x2B50 &#x2B50 &#x2B50 &#x2B50 &#x2B50 <span class="spn-avl">1.mil Avaliações</span></p>
+            <p>Bicicleta Motorizada Preta com Banco XR. Velocidade de até 80 km/h com consumo medio aproximado de 65
+              km/litro.</p>
+            <p>R$ 2.350,00</p>
+            <span class="spn-cartao">em 12x R$199,90</span>
+            <div class="btn-color">
+              <p>Escolha a cor</p>
+              <input type="button" id="amarelo" onclick="imgAmarela()" />
+              <input type="button" id="azul" onclick="imgAzul()" />
+              <input type="button" id="vermelho" onclick="imgvermelho()" />
+              <input type="button" id="preto" onclick="imgpreto()" />
+            </div>
+            <div class="form-cep">
+              <label for="cep">Calcule o frete</label>
+              <div class="inf-cep">
+                <input class="cep cx-txt-cep" type="number" name="cep" id="cep" />
+                <input class="cep botao-cep" type="button" value="Buscar" />
+              </div>
+            </div>
+            <div class="btn">
+              <button class="btn-comprar">
+                <svg class="MuiSvgIcon-root">
+                  <path
+                    d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z">
+                  </path>
+                </svg>
+                COMPRAR
+              </button>
+            </div>
+          </div>
+          <div class="form-cadastro">
+            <form class="form-email">
+              <label for="email">Informe seu Email para receber ofertas e promoções exclusivas deste
+                produto.</label>
+              <div class="inf-email">
+                <input class="cx-txt" type="email" name="email" id="email" />
+                <input class="botao-txt" type="button" value="Cadastrar" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec_2">
+      <div id="descricao">
+        <h1>Descrição</h1>
+        <p>
+          Bicicleta Motorizada 80 cilindradas MODELO “<i>LÁ PODEROSA</i>”.<br />
+          Utiliza o novíssimo e revolucionário tanque de plástico injetado de
+          alta resistência. importado da Europa, desenhado na região de
+          Piemonte (Itália) especialmente para resistir a qualquer
+          intempérie.<br />
+          Não amassa Não vaza (estanqueidade 100% testada à pressão
+          equivalente a uma coluna de água 100m profundidade)<br />
+          Maior durabilidade (não possui emendas de solda que se abrem com o
+          tempo) Inclui tampa com encaixe rosqueado. Não vaza e nem afrouxa
+          com o tempo.
+        </p>
+        <p>
+          COROA 52: Em relação às coroas comuns (44 dentes) utilizadas pelos
+          nossos concorrentes as nossas bicicletas utilizam a exclusiva coroa
+          52 dentes. O que isso significa na prática? 30% a mais de torque na
+          sua bicicleta. Ou seja, ela fica 30% mais forte que as outras para
+          vencer subidas com muito mais facilidade. Nenhuma outra bicicleta
+          motorizada do mercado oferece isso. Por isso as BM são as melhores e
+          mais fortes bicicletas motorizadas do mercado brasileiro. A nossa
+          Bike é realmente preparada para ser motorizada, não uma mera
+          bicicleta adaptada com motor.
+        </p>
+      </div>
+      <div id="info-tec">
+        <h1>Informação Tecnica</h1>
+        <ul class="inf-tec-list">
+          <li>Quadro - - - Caiçara em Aço Carbono</li>
+          <li>Manete e Freio - - - V-Brake</li>
+          <li>Pedivela - - - Monobloco 160mm</li>
+          <li>Banco - - - Mobilete XR</li>
+          <li>Motor - - - 2T</li>
+          <li>Cilindrada - - - 80cc</li>
+          <li>Ignição - - - Eletrônica: (CDI/Magneto)</li>
+          <li>Embreagem - - - Seca. Ativada pelo Manete</li>
+          <li>Combustível - - - Gasolina + Óleo 2 Tempos</li>
+          <li>Capacidade do Tanque de Gasolina - - - 1,5 Litros</li>
+          <li>Comsumo - - - 40 a 60 km/L</li>
+        </ul>
+      </div>
+      <div id="garantia">
+        <h1>Garantia</h1>
+        <p>Sempre que for realizada uma compra conosco, nós da B.M. realizaremos testes para garantir o perfeito
+          funcionamento do produto, também iremos buscar os melhores meios de transporte para que o produto chegue até
+          você com os menores riscos de danos; Caso ao chegar em sua residencia haja algum defeito ou mau funcionamento
+          do produto o senhor terá 90 dias para entrar em contato conosco e para realizar a troca da parte danificada,
+          troca do produto ou até mesmo a devolução com estorno do valor; Dito isto uma vez que o prazo de 90 dias tenha
+          acabado será de responsabilidade do cliente arcar com quaisquer custos de mautenção.</p>
+      </div>
+    </section>
+  </main>
+  <script>
+    let menuMobile = document.querySelector('#nav2');
+    let menuIcon = document.getElementById("menuB");
+    
+    function trocarmenu() {
+      var onmenu = document.getElementById("navbar2");
+      const windowTop = window.pageYOffset;
+      if (windowTop >= 300 && onmenu.classList.contains("ofnav") === true) {
+        onmenu.removeAttribute("class", "ofnav");
+        onmenu.setAttribute("class", "onnav");
+        menuIcon.innerHTML = "&#9776";
+      }
+      if (windowTop < 300 && onmenu.classList.contains("onnav") === true) {
+        onmenu.removeAttribute("class", "onnav");
+        onmenu.setAttribute("class", "ofnav");
+        menuMobile.removeAttribute( "class", "open");
+        menuMobile.setAttribute("class", "nav-bar-2");
+      }{
+      }
+    }
+    window.addEventListener("scroll", function () {
+      trocarmenu();
+    });
+
+
+    let divImg = document.querySelector('.imagem');
+    let bikAmarela = "./img/BiciMotorAmarela .png";
+    let bikAzul = "./img/BiciMotorAzul.png";
+    let bikRed = "./img/BiciMotorVermelha.png";
+    let bikPreta = "./img/Bike-motorizada-2-venda.png";
+
+
+    function imgAmarela() {
+      document.getElementById('img_bikemoto').src = bikAmarela;
+      imgAtual = bikAmarela;
+    }
+    function imgAzul() {
+      document.getElementById('img_bikemoto').src = bikAzul;
+      imgAtual = bikAzul;
+    }
+    function imgvermelho() {
+      document.getElementById('img_bikemoto').src = bikRed;
+      imgAtual = bikRed;
+    }
+    function imgpreto() {
+      document.getElementById('img_bikemoto').src = bikPreta;
+      imgAtual = bikPreta;
+    }
+
+    let imgMiniP = document.querySelector('#miniPreta');
+    let imgMiniA = document.querySelector('#miniAmarela');
+    let imgMiniB = document.querySelector('#miniAzul');
+    let imgMiniV = document.querySelector('#miniVermelha');
+    let imgMiniVid = document.querySelector('#miniVideo');
+
+
+    imgMiniP.addEventListener("mouseover", function () {
+      document.getElementById('img_bikemoto').src = bikPreta;
+      imgAtual = bikPreta;
+    });
+
+    imgMiniA.addEventListener("mouseover", function () {
+      document.getElementById('img_bikemoto').src = bikAmarela;
+      imgAtual = bikAmarela;
+    });
+
+    imgMiniB.addEventListener("mouseover", function () {
+      document.getElementById('img_bikemoto').src = bikAzul;
+      imgAtual = bikAzul;
+    });
+
+    imgMiniV.addEventListener("mouseover", function () {
+      document.getElementById('img_bikemoto').src = bikRed;
+      imgAtual = bikRed;
+    });
+
+    imgMiniVid.addEventListener("mouseover", function () {
+      document.getElementById('img_bikemoto').setAttribute("class", "ofimg");
+      document.getElementById('video').setAttribute("class", "onvideo");
+    });
+
+    imgMiniVid.addEventListener("mouseout", function () {
+      document.getElementById('img_bikemoto').removeAttribute("class", "ofimg");
+      document.getElementById('video').setAttribute("class", "ofvideo");
+    });
+
+    function openNav(){
+     
+      if(menuMobile.classList.contains('open')) {
+      menuMobile.removeAttribute( "class", "open");
+      menuMobile.setAttribute("class", "nav-bar-2");
+      menuIcon.innerHTML = "&#9776";
+      } else {
+        menuMobile.setAttribute("class", "open");
+        menuIcon.innerHTML = "&#9932";
+      }
+    }
+
+    </script>
+</body>
+
+</html>

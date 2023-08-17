@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family= Open +Sans:wght@300 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rosybrown;
+    position: relative;
+    z-index: 2;
+}
+.img-header-logo{
+    width: 100%;
+    display: flex;
+    margin: 15px auto;
+    justify-content: space-around;
+}
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position:sticky;
+    top: 0;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rosybrown;
+}
+.ofnav{
+    position: fixed;
+    top: -12em;
+}
+.onnav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rosybrown;
+    transition: 0.5s;
+    position: fixed;
+    top: 0;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color:black;
+    padding:25px 15px;
+}
+a:hover, .menuBurguer:hover{
+    background-color:rgb(245, 185, 185);
+}
+
+/*------Fim do header-----------*/
+main{
+    width: 96%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.sec_1{
+    height: 80vh;
+    margin: 0 auto;
+    gap: 3rem;
+    padding-top: 10vh;
+    display: flex;
+    align-items: center;
+}
+.img-bikes{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 685px;
+}
+.imagem{
+    width: 670px;
+    padding-top: 70px;
+}
+.img-mini{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.img-mini div{
+    border: solid gray 1.6px;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.imagem img{
+    width: 650px;
+    object-fit: cover;
+    margin:0 auto; 
+}
+
+.ofvideo, .ofimg{
+    height: 0; 
+}
+.onvideo{
+    height: 521px;
+    display: flex;
+    width: 650px;
+    margin: 0 auto;
+    transition: 0.5s;
+}
+
+.prod-inf{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    width: 550px;
+    height: 670px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    border-radius: 10px;
+    box-shadow: 1px 0px 9px 2px gray;
+}
+.inf-prod{
+    display: flex;
+    margin-top: 40px;
+}
+.anuncio{
+    width: 100%;
+    margin: 15px;
+    height: 45vh;
+}
+.anuncio h1{
+    font-size: 2rem;
+    margin: 10px;
+}
+.anuncio p{
+    font-size: 1.5rem;
+    margin: 10px;
+}
+.anuncio p:nth-child(4){
+    margin-bottom: 0; 
+}
+.spn-avl{
+    opacity: 0.7;
+    margin: 10px 0;
+}
+.spn-cartao{
+    opacity: 0.7;
+    font-size: 1.3rem;
+    margin-left: 16px;
+}
+.btn-color input{
+    width: 40px;
+    padding: 12px;
+    margin: 0 0 20px 0;
+    border-radius: 50%;
+}
+.btn-color p{
+    font-size: 1.6rem;
+    opacity: 0.7;
+}
+#amarelo{
+    background-color: yellow;
+}
+#azul{
+    background-color: blue;
+}
+#vermelho{
+    background-color: red;
+}
+#preto{
+    background-color: black;
+}
+.form-cep label{
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+.inf-cep{
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+.cep{
+    font-size: 1.2rem;
+    border-radius: 5px;
+    PADDING: 5px;
+}
+.cx-txt-cep{
+    width: 150px;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 150px;
+    margin: 0 auto;
+}
+.btn-comprar{
+    font-size: 1.5rem;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgb(47, 226, 56);
+    display: flex;
+    align-items: center;
+}
+.MuiSvgIcon-root{
+    font-size: 35px;
+    width: 40px;
+    height: 30px;
+}
+
+.form{
+    display: flex;
+    gap: 0.7rem;
+    width: 100%;
+    margin: 20px auto;
+    flex-direction: column;
+}
+.form-cadastro{
+    width: 100%;
+    height: 11vh;
+    margin: 15px;
+    display: none;
+}
+
+p{
+    font-size: 1.3rem;
+    padding: 5px 0;
+}
+.inf-tec-list li{
+    list-style: none;
+    font-size: 1.4rem;
+}
+.sec_2{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    width: 75%;
+    margin: 0 auto;
+    gap: 2.5rem;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+.sec_2 div h1{
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+.menuBurguer{
+    display: none;
+    cursor: pointer;
+    font-size: 40px;
+    margin: 10px;
+}
+
+.nav3{
+    display: none;
+    height: 0;
+    overflow: hidden;
+    left: 800px;
+}
+
+@media(max-width: 1500px){
+    .sec_1, .sec_2{
+        width: 1300px;
+        row-gap: 30px;
+    }
+    .img-bikes{
+        width: 700px;
+    }
+    .imagem{
+        width: 550px;
+    }
+    #img_bikemoto, #video{
+        width: 500px;
+    }
+}
+@media(max-width: 1400px){
+
+    .sec_1, .sec_2{
+        width: 1200px;
+        row-gap: 30px;
+        column-gap: unset;
+    }
+    .img-bikes{
+        width: 615px;
+    }
+    .imagem{
+        width: 500px;
+    }
+    #img_bikemoto, #video{
+        width: 470px;
+    }
+    .anuncio h1{
+        font-size: 1.8rem;
+    }
+    .anuncio p{
+        font-size: 1.3rem;
+    }
+}
+@media(max-width: 1200px){
+
+    .sec_1, .sec_2{
+          width: 1070px;
+          row-gap: 30px;
+    }
+    .img-bikes{
+        width: 570px;
+        row-gap: 30px;
+    }
+    .imagem{
+        width: 450px;
+    }
+    #img_bikemoto, #video {
+        width: 440px;
+    }
+    .prod-inf{
+        width: 500px;
+    }
+    .anuncio h1{
+        font-size: 1.5rem;
+    }
+    .anuncio p{
+        font-size: 1.3rem;
+    }
+}
+@media(max-width: 1100px){
+
+    .sec_1, .sec_2{
+        width: 1005px;
+        row-gap: 30px;
+        column-gap: unset;
+    }
+    .prod-inf{
+        width: 430px;
+        height: 600px;
+    }
+    .inf-prod{
+        margin-top: 0;
+    }
+    .anuncio h1{
+        font-size: 1.5rem;
+    }
+    .anuncio p{
+        font-size: 1.3rem;
+    }
+    .img-bikes{
+        width: 530px;
+    }
+    .img-mini{
+        width: 80px;
+    }
+}
+@media(max-width: 1000px){
+    main{
+        width: 998px;
+    }
+    .sec_1, .sec_2{
+        width: 995px;
+        row-gap: 30px;
+        column-gap: unset;
+    }
+    .anuncio h1{
+        font-size: 1.4rem;
+    }
+    .anuncio p{
+        font-size: 1.1rem;
+    }
+}
+@media(max-width: 850px){
+    main{
+        width: 795px;
+    }
+    .sec_1, .sec_2{
+        width: 750px;
+        row-gap: 30px;
+        column-gap: unset;
+    }
+    .sec_1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 765px;
+        margin: 20px;
+        height:  1339px;
+        padding-top: 0;
+    }
+    .img-bikes{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .img-mini{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+}
+@media(max-width: 750px){
+    a{
+        font-size: 1.1rem;
+    }
+    .nav-bar-2{
+        position: absolute;
+        top: 89px;
+        right: -35vh;
+        width: 50vw;
+        height: 36vh;
+        background-color: rosybrown;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+    }
+    .nav a{
+        margin-left: 0;
+        opacity: 0;
+    }
+    .menuBurguer{
+        display: block;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+    .open{
+        transform: translateX(0);
+        right: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        top: 89px;
+        width: 50vw;
+        height: 36vh;
+        background-color: rosybrown;
+    }
+    .sec_1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 600px;
+        margin: 20px;
+        height:  1339px;
+        padding-top: 0;
+    }
+    .prod-inf{
+        height: 590px;
+    }
+    .sec_2{
+        margin-top: 50px;
+        width: 615px;
+        margin: 15px;
+        position:relative;
+    }
+    .img-bikes{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .img-mini{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        gap: 10px;
+    }
+}
+@media(max-width: 500px){
+    main {
+        width: 480px;
+        margin: 0;
+    }
+    .sec_1, .sec_2{
+        margin:0;
+        width: 477px;
+        margin: 10px;
+    }
+    .img-mini{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        gap: 5px;
+        width: 480px;
+    }
+    .img-bikes{
+        width:460px;
+    }
+    .img-mini div{
+        width: 80px;
+    }
+    .imgmini img{
+        width: 75px;
+    }
+}
+@media(max-width: 420px){
+    main {
+        width: 380px;
+        margin: 0;
+    }
+    .sec_1, .sec_2{
+        margin:0;
+        width: 394px;
+        margin: 10px;
+    }
+    .prod-inf,.inf-prod{
+        width: 390px;
+    }
+    .img-mini{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        gap: 3px;
+        width: 380px;
+    }
+    .img-bikes{
+        width:360px;
+    }
+    .img-mini div{
+        width: 70px;
+    }
+    .imgmini img{
+        width: 70px;
+    }
+}
+@media(max-width: 370px){
+
+    a{
+        font-size: 1rem;
+        padding: 15px 5px;
+    }
+    main{
+        width: 355px;
+        margin: 2px;
+    }
+    .sec_1,.sec_2{
+        width: 352px;
+        margin: 0;
+    }
+    .sec_1{
+        height: 1095px;
+    }
+    .img-bikes {
+        width: 345px;
+        height: 470px;
+    }
+    .imagem {
+        width: 350px;
+        padding-top: 0;
+    }
+    #img_bikemoto, #video {
+        width: 355px;
+    }
+    .img-mini div {
+        width: 60px;
+        height: 60px;
+    }
+    .imgmini img {
+        width: 61px;
+    }
+    .prod-inf, .inf-prod {
+        width: 345px;
+    }
+    .anuncio{
+        margin:  20px 0 0 0;
+    }
+    .btn{
+        width: 200px;
+    }
+    .form-cep label {
+        font-size: 1.2rem;
+    }
+}
