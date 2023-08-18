@@ -478,6 +478,7 @@ p{
     main {
         width: 480px;
         margin: 0;
+        gap: 0;
     }
     .sec_1, .sec_2{
         margin:0;
@@ -500,6 +501,38 @@ p{
     .imgmini img{
         width: 75px;
     }
+    .anuncio h1 {
+        font-size: 1.2rem;
+    }
+    .anuncio p {
+        font-size: 1rem;
+    }
+    .spn-cartao {
+        font-size: 0.9rem;
+    }
+    .form-cep label {
+        font-size: 1rem;
+    }
+    .btn-color input {
+        width: 35px;
+        height: 35px;
+        padding: 12px;
+        margin: 0 0 10px 0;
+        border-radius: 50%;
+    }
+    .cep {
+        font-size: 1rem;
+        border-radius: 5px;
+        PADDING: 5px;
+    }
+    .btn-comprar {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+   #descricao p, .inf-tec-list li, #garantia p{
+    font-size: 1rem;
+   }
+
 }
 @media(max-width: 420px){
     main {
@@ -507,8 +540,8 @@ p{
         margin: 0;
     }
     .sec_1, .sec_2{
-        margin:0;
-        width: 394px;
+        margin: 0;
+        width: 375px;
         margin: 10px;
     }
     .prod-inf,.inf-prod{
@@ -529,6 +562,10 @@ p{
     }
     .imgmini img{
         width: 70px;
+    }
+    a{
+        font-size: 1rem;
+        padding: 15px 5px;
     }
 }
 @media(max-width: 370px){
@@ -577,5 +614,61 @@ p{
     }
     .form-cep label {
         font-size: 1.2rem;
+    }
+}
+@media(max-width:300px){
+    .sec_1, .sec_2{
+        width: 295px;
+    }
+    a{
+        font-size: 0.8rem;
+        padding: 10px 1.8px;
+    }
+    #img_bikemoto, #video{
+        width: 280px;
+    }
+    #header-img{
+        width: 275px;
+    }
+    .imagem{
+        width: 320px;
+    }
+    .img-mini {
+        width: 325px;
+    }
+    .img-bikes {
+        width: 275px;
+        height: 415px;
+    }
+    .prod-inf, .inf-prod {
+        width: 285px;
+    }
+}
+@media(max-width:280px){
+    main {
+        width: 280px;
+        margin: 2px auto;
+    }
+    .sec_1, .sec_2{
+        width: 275px;
+        margin: 3px;
+    }
+    .img-mini {
+        width: 275px;
+    }
+    .imagem {
+        width: 285px;
+    }
+    .img-mini div {
+        width: 50px;
+        height: 60px;
+        gap: 0.8px;
+        margin: 0;
+    }
+    .imgmini img {
+        width: 53px;
+    }
+    .prod-inf, .inf-prod {
+        width: 270px;
     }
 }
